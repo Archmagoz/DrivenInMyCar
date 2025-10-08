@@ -1,0 +1,26 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Driven in my Car"
+config/description="Vrum Vrum"
+run/main_scene="uid://b5mybpidonhkr"
+config/features=PackedStringArray("4.5", "Forward Plus")
+config/icon="uid://dbrb3k8prf1ij"
+
+[debug]
+
+gdscript/warnings/untyped_declaration=1
+
+[display]
+
+window/size/resizable=false
+window/stretch/mode="canvas_items"
