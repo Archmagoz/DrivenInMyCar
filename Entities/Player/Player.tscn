@@ -1,13 +1,14 @@
 [gd_scene load_steps=6 format=3 uid="uid://0rdpx5rb0ira"]
 
-[ext_resource type="Texture2D" uid="uid://3d1eo1lwmoej" path="res://Entities/Player/PlayerSprite.png" id="1_e5kic"]
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_u36tg"]
+load_path = "res://.godot/imported/PlayerSprite.png-be53345dc46408fd088d3ca2fb13def2.ctex"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ww0jn"]
-atlas = ExtResource("1_e5kic")
+atlas = SubResource("CompressedTexture2D_u36tg")
 region = Rect2(0, 0, 40, 42)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vweq0"]
-atlas = ExtResource("1_e5kic")
+atlas = SubResource("CompressedTexture2D_u36tg")
 region = Rect2(41, 0, 40, 42)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_u36tg"]
@@ -33,6 +34,8 @@ texture_filter = 1
 [node name="AnimatedSprite" type="AnimatedSprite2D" parent="."]
 scale = Vector2(-1, 1)
 sprite_frames = SubResource("SpriteFrames_u36tg")
+frame = 1
+frame_progress = 0.38028044
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_e5kic")
